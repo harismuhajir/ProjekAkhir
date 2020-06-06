@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/complain.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <title>Lapor</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="brand">
+            <a href="index.html"><img class="img-brand" src="img/siap.png"></a>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="complain.html">Lapor</a></li>
+                    <li><a href="forum.html">Forum</a></li>
+                    <li><a href="register.html">Daftar</a></li>
+                    <li><a href="login.html">Masuk</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div class="judul wow fadeIn"> <br><br><br><br>
+        <h1>Layanan Pengaduan Mahasiswa</h1>
+        <hr class="line" size="5%" color="#1FAB98">
+        <p class="title">Tulis pengaduan Anda, akan Kami sampaikan kepada pihak kampus</p>
+    </div><br>
+    <div class="complain wow fadeInDown" data-wow-delay="1s">
+        <form action="">
+            <h2 class="wow pulse" data-wow-iteration="infinite" style="color : #1FAB98">PENGADUAN</h2><br>
+            <input class="complain-input" type="text" name="title" placeholder="Ketik judul laporan"><br><br>
+            <textarea class="complain-input" rows="10" name="content" placeholder="Ketik isi laporan Anda"></textarea><br>
+            <input placeholder="Pilih tanggal kejadian" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="" /><br><br>
+            <select id="category">
+                <option value="" disabled selected>Pilih Kategori Laporan Anda...</option>
+                <option value="">Keuangan</option>
+                <option value="">Fasilitas</option>
+                <option value="">Akademik</option>
+                <option value="">Lainnya</option>
+            </select><br><br>
+            <div class="fileUpload">
+                <span>Upload Lampiran Foto</span>
+                <input type="file" class="upload">
+            </div><br><br>
+            <input type="button" value="LAPOR !" />
+        </form>
+    </div>
+    <br>
+    <div class="footer">
+        <p>Copyright &copy; 2020 SIAP<br> All rights reserved</p>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
